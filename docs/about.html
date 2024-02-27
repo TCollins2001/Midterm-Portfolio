@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Need a website? This is the place. My name is Te'Onvion Collins and I am a web developer and designer for websites."/>
+  <title>MIDTERM PORTFOLIO: ABOUT</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="nav">
+      <nav class="navbar">
+    <a href="index.html" id="logo">TC</a>
+    <ul class="nav-menu">
+      <li class="nav-item"><a href="index.html" class="nav-link">HOME</a></li>
+      <li class="nav-item"><a href="about.html" class="nav-link">ABOUT</a></li>
+      <li class="nav-item"><a href="projects.html" class="nav-link">PROJECTS</a></li>
+    </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+  </div>
+  </header>
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+
+    hamburger.addEventListener("click", () => {
+      hamburger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+    });
+
+    document.querySelectorAll(".nav-link").forEach((n) =>
+      n.addEventListener("click", () => {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+      })
+    );
+  </script>
+  <section class="about-hero">
+    <h1>GET TO KNOW ME!</h1>
+  </section>
+  <section class="about-about">
+    <p>I have been successfully building websites with satisfactory HTML, CSS, and limited JavaScript knowledge for about 2 years, while continuously working to broaden my knowledge in other languages as well. </p>
+    <p>I create both responsive and static websites, along with setting up web hosting for clients to ensure that when any website of my creation is deployed live, it is of high-quality and exactly customized to their standards.</p>
+  </section>
+  <section class="skills">
+    <h1>EXPERIENCE:</h1>
+    <ul>
+      <li><i class="fa-brands fa-html5" style="color: #e34c26;"></i></li>
+      <li><i class="fa-brands fa-css3-alt" style="color: #264de4;"></i></li>
+      <li><i class="fa-brands fa-square-js" style="color: #f0db4f;"></i></li>
+      <li><i class="fa-brands fa-git-alt" style="color: #f34f29;"></i>
+      </li>
+      <li><i class="fa-brands fa-github" style="color: #000000;"></i></li>
+      <li><i class="fa-brands fa-bootstrap" style="color: #8212fa;"></i></li>
+      <li><img src="images/figma-logo.webp" alt="logo for figma web application"></li>
+    </ul>
+  </section>
+  <section class="steps">
+    <h2>SO HAVE YOUR WEBSITE IN 4 EASY STEPS:</h2>
+    <div class="step-one"><p>CONSULTATION & PLANNING</p></div>
+    <div class="step"><img  class="consult" src="images/consult-plan.webp" alt="computer screen with planning icons"></div>
+    <div class="step-two"><p>PROTOTYPING</p></div>
+    <div class="step"><img  class="proto" src="images/prototyping.webp" alt="computer with html and div screen"></div>
+    <div class="step-three"><p>FINAL DESIGN</p></div>
+    <div class="step"><img class="final" src="images/final-design.webp" alt="computer, phone, and tablet devices with matching website screens"></div>
+    <div class="step-four"><p>OFFICIAL WEBSITE LAUNCH</p></div>
+    <div class="step"><img class="off" src="images/official-launch.webp" alt="mouse pointing to world wide web"></div>
+  </section>
+  <footer>
+    <ul class="socials">
+      <li><a href="https://github.com/TCollins2001" target="_blank" aria-label="github"><i class="fa-brands fa-github" style="color: #000000;"></i></a></li>
+      <li><a href="#" target="_blank" aria-label="linkedin"><i class="fa-brands fa-linkedin" style="color: #0072b1;"></i></a></li>
+        <!--Don't have a LinkedIn Account-->
+      <li><a href="mailto:tcwebdesignservices@gmail.com" target="_blank" aria-label="email"><i class="fa-regular fa-light fa-envelope" style="color: #000000;"></i></a></li>
+    </ul>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Need a website? This is the place. My name is Te'Onvion Collins and I am a web developer and designer for websites."/>
+  <title>MIDTERM PORTFOLIO: PROJECTS</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="nav">
+      <nav class="navbar">
+    <a href="index.html" id="logo">TC</a>
+    <ul class="nav-menu">
+      <li class="nav-item"><a href="index.html" class="nav-link">HOME</a></li>
+      <li class="nav-item"><a href="about.html" class="nav-link">ABOUT</a></li>
+      <li class="nav-item"><a href="projects.html" class="nav-link">PROJECTS</a></li>
+    </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+  </div>
+  </header>
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+
+    hamburger.addEventListener("click", () => {
+      hamburger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+    });
+
+    document.querySelectorAll(".nav-link").forEach((n) =>
+      n.addEventListener("click", () => {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+      })
+    );
+
+    function openTab() {
+        window.open("https://tc-web-design-services.com/", "_blank");
+      }
+
+      function openTab2() {
+        window.open("https://friendly-crepe-9dd6a9.netlify.app/", "_blank");
+      }
+
+      function openTab3() {
+        window.open("https://elegant-cuchufli-ff274a.netlify.app/", "_blank");
+      }
+
+      function openTab4() {
+        window.open("https://njit-wis.github.io/midterm-portfolio-TCollins2001/", "_blank");
+      }
+  </script>
+  <section class="projects-hero">
+    <h1>NOTABLE PROJECTS</h1>
+  </section>
+  <section class="projects-projects">
+    <div class="project-box"><img class="portfolio" src="images/project1(reduced).webp" alt="self-created portfolio website thumbnail"></div>
+    <div class="project-des">
+      <button type="button" class="projects-view" onclick="openTab()">VIEW</button>
+      <ul>
+        <li>Utilized HTML, CSS, and JavaScript to create official five-page website to self-promote freelance business</li>
+        <li>Utilized media queries to create website responsiveness</li>
+        <li>Set up web hosting and personal domain, as well as officially deployed the website</li>
+      </ul>
+    </div>
+    <div class="project-box"><img class="daycare" src="images/project2(reduced).webp" alt="self-created daycare website thumbnail"></div>
+    <div class="project-des">
+      <button type="button" class="projects2-view" onclick="openTab2()">VIEW</button>
+      <ul>
+        <li>Utilized the web application "Moqups" to create wireframe of a local day care business' potential website interface</li>
+        <li>Utilized HTML and CSS to create official four-page website to promote local day care business</li>
+        <li>Set up web hosting, as well as officially deployed the website</li>
+      </ul>
+    </div>
+    <div class="project-box"><img class="concert" src="images/project3(reduced).webp" alt="self-created concert venue website thumbnail"></div>
+    <div class="project-des">
+      <button type="button" class="projects3-view" onclick="openTab3()">VIEW</button>
+      <ul>
+        <li>Utilized the web application "Figma" to create mock interface of potential concert venue website</li>
+        <li>Utilized HTML, CSS, and JavaScript to create official five-page website to promote concert venues around New Jersey</li>
+        <li>Officially deployed the website and set up web hosting</li>
+      </ul>
+    </div>
+    <div class="project-box"><img class="portfolio2" src="images/project4(reduced).webp" alt="self-created portfolio website thumbnail"></div>
+    <div class="project-des">
+      <button type="button" class="projects4-view" onclick="openTab4()">VIEW</button>
+      <ul>
+        <li>Utilized the web application "Figma" to create mock interface of portfolio website</li>
+        <li>Utilized HTML, CSS, JavaScript, and media queries to create official responsive portfolio website to promote personal freelance business</li>
+        <li>Officially deployed the website and set up web hosting</li>
+      </ul>
+    </div>
+  </section>
+  <footer>
+    <ul class="socials">
+      <li><a href="https://github.com/TCollins2001" target="_blank" aria-label="github"><i class="fa-brands fa-github" style="color: #000000;"></i></a></li>
+      <li><a href="#" target="_blank" aria-label="linkedin"><i class="fa-brands fa-linkedin" style="color: #0072b1;"></i></a></li>
+        <!--Don't have a LinkedIn Account-->
+      <li><a href="mailto:tcwebdesignservices@gmail.com" target="_blank" aria-label="email"><i class="fa-regular fa-light fa-envelope" style="color: #000000;"></i></a></li>
+    </ul>
+  </footer>
+</body>
+</html>
